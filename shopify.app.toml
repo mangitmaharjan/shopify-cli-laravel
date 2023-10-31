@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "php-s-theme-exrtension"
+client_id = "1124432b47177fef47c90bc33e143133"
+application_url = "https://documentation-design-belle-cambodia.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://documentation-design-belle-cambodia.trycloudflare.com/auth/callback",
+  "https://documentation-design-belle-cambodia.trycloudflare.com/auth/shopify/callback",
+  "https://documentation-design-belle-cambodia.trycloudflare.com/api/auth/callback",
+  "https://documentation-design-belle-cambodia.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "speed-test-matat.myshopify.com"
